@@ -1,0 +1,14 @@
+{
+  "name": "portfolio_sass",
+  "version": "1.0.0",
+  "description": "portfolio project using sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "author": "Jonathan Jacka",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
