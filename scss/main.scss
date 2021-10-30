@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'config';
 @import 'utilities';
 
 // General
@@ -152,9 +152,10 @@ img {
 
       //process-icon
       &-icon {
+        box-sizing: content-box;
         border-radius: 50%;
         background: $dark-color;
-        color: #fff;
+        color: set-text-color($dark-color);
         padding: 2rem;
         width: 70px;
         height: 70px;
@@ -162,21 +163,67 @@ img {
         text-align: center;
         position: relative;
         transition: all 1s;
+
+        &:hover {
+          background-color: $main-color;
+          color: set-text-color($main-color);
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+
+          .process-step {
+            background-color: $dark-color;
+            color: set-text-color($dark-color);
+          }
+        }
       }
 
       //process-step
       &-step {
+        box-sizing: content-box;
         position: absolute;
         top: 0;
         right: 0;
         font-size: 28px;
         background: $main-color;
+        color: set-text-color($main-color);
         border-radius: 50%;
         height: 15px;
         width: 15px;
         line-height: 15px;
         padding: 1rem;
         transition: all 1s;
+      }
+    }
+  }
+}
+
+//footer
+
+#main-footer {
+  background: $dark-color;
+  color: #fff;
+  height: 5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+    .social .fab {
+      box-sizing: content-box;
+      margin-right: 1rem;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+
+      &:hover {
+        background: $main-color;
       }
     }
   }
