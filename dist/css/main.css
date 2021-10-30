@@ -4,6 +4,37 @@
   margin: auto;
   overflow: hidden; }
 
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  color: #333;
+  background-color: #ffbc00; }
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4; }
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333; }
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: #ffbc00; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
+
 body {
   font-family: 'Dosis', sans-serif;
   line-height: 1.6;
@@ -22,17 +53,17 @@ img {
   width: 100%; }
 
 #logo {
-  width: 70px;
-  height: 70px;
+  width: 150px;
   color: #fff;
   text-transform: uppercase; }
 
 #main-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   padding-top: 1rem; }
   #main-nav ul {
-    display: flex; }
+    display: flex;
+    align-items: center; }
   #main-nav li {
     padding: 1rem 1.5rem; }
   #main-nav a {

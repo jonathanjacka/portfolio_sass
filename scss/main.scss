@@ -26,8 +26,7 @@ img {
 
 //logo
 #logo {
-  width: 70px;
-  height: 70px;
+  width: 150px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -35,11 +34,12 @@ img {
 //main nav
 #main-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   padding-top: 1rem;
 
   ul {
     display: flex;
+    align-items: center;
   }
 
   li {
